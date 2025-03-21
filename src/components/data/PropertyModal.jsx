@@ -5,7 +5,7 @@ const PropertyModal = ({ onClose, properties }) => {
 
   const [currentPropertyIndex, setCurrentPropertyIndex] = useState(0);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
- 
+
   console.log(setCurrentPropertyIndex);
 
   if (!properties || properties.length === 0) {
@@ -48,28 +48,28 @@ const PropertyModal = ({ onClose, properties }) => {
           </div>
         </div>
         <div className="flex justify-center items-center gap-2 text-gray-500 text-sm mb-1">
-          <FaLocationDot className="text-blue-600"/>
+          <FaLocationDot className="text-blue-600" />
           <span>{currentProperty.location}</span>
-          
+
         </div>
         <h2 className="ml-4 text-xl font-bold text-gray-800">{currentProperty.title}</h2>
         <div className="ml-4 text-lg font-bold text-blue-600 mb-1">{currentProperty.price}</div>
 
         <div className="flex justify-center gap-6 mb-1 bg-gray-50 rounded-lg">
-                          <div className="flex items-center gap-3">
-                            <FaBed className="text-blue-600"/>
-                            <span className="text-gray-600">{currentProperty.beds} Habitaciones</span>
-                          </div>
-          
-                          <div className="flex items-center gap-2">
-                            <FaBath className="text-blue-600"/>
-                            <span className="text-gray-600">{currentProperty.baths} Baños</span>
-                          </div>
-          
-                          <div className="flex items-center gap-2">
-                            <FaRuler className="text-blue-600"/>
-                            <span className="text-gray-600">{currentProperty.sqft} m2</span>
-                          </div>
+          <div className="flex items-center gap-3">
+            <FaBed className="text-blue-600" />
+            <span className="text-gray-600">{currentProperty.beds} Habitaciones</span>
+          </div>
+
+          <div className="flex items-center gap-2">
+            <FaBath className="text-blue-600" />
+            <span className="text-gray-600">{currentProperty.baths} Baños</span>
+          </div>
+
+          <div className="flex items-center gap-2">
+            <FaRuler className="text-blue-600" />
+            <span className="text-gray-600">{currentProperty.sqft} m2</span>
+          </div>
         </div>
         <div className="mb-1">
           <h3 className="text-center font-semibold mb-1">Descripción</h3>

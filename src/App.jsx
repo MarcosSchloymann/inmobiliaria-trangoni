@@ -1,5 +1,5 @@
 import PropertyModal from "./components/PropertyModal";
-import FeaturedProperties from "./components/FeaturedProperties"; 
+import FeaturedProperties from "./components/FeaturedProperties";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
@@ -11,12 +11,12 @@ function App() {
   const [selectedProperty, setSelectedProperty] = useState(null)
 
   return <div>
-    <Home/>
-    <FeaturedProperties setSelectedProperty={setSelectedProperty}/>
-    <Contact/>
-    <Footer/>
+    <Home />
+    <FeaturedProperties setSelectedProperty={setSelectedProperty} />
+    <Contact />
+    <Footer />
 
-    {selectedProperty && (<PropertyModal properties={[selectedProperty]} onClose={()=> setSelectedProperty(null)}/>)}
+    {selectedProperty && (<PropertyModal properties={[selectedProperty]} onClose={() => setSelectedProperty(null)} />)}
   </div>;
 }
 

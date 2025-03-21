@@ -1,5 +1,5 @@
-import { FaBath, FaBed, FaHeart, FaLocationDot, FaRuler } from "react-icons/fa6"
-import properties from "../../properties"
+import { FaBath, FaBed, FaLocationDot, FaRuler } from "react-icons/fa6"
+import properties from "./properties"
 
 const FeaturedProperties = ({setSelectedProperty}) => {
 
@@ -16,9 +16,6 @@ const FeaturedProperties = ({setSelectedProperty}) => {
           onClick={()=>setSelectedProperty(property)}>
             <div className="relative">
               <img src={property.image} alt="img" className="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-300"/>
-              <button className="absolute top-4 right-4 p-2 rounded-full bg-white/70 hover:bg-white transition-colors duration-200">
-                <FaHeart className="text-gray-600 hover:text-red-500 transition-colors duration-200"/>
-              </button>
             </div>
 
             <div className="p-6">

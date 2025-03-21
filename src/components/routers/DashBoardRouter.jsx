@@ -1,59 +1,46 @@
-// import React from 'react'
-// import { Navbar } from '../components/ui/Navbar'
-import { 
+import {
     Navigate,
-     Route, 
-     Routes } from 'react-router-dom'
-// import CasaScreen from '../components/casas/CasaScreen'
-
-// import DepartamentoScreen from '../components/deptos/DepartamentoScreen'
-// import GalponScreen from '../components/galpones/GalponScreen'
-// import NosotrosScreen from '../components/nosotros/NosotrosScreen'
-// import { ContactoScreen } from '../components/contacto/ContactoScreen'
-// import Header from '../components/header/Header'
-// import Footer from '../components/footer/Footer'
-import Home from '../pages/Home'
+    Route,
+    Routes
+} from 'react-router-dom'
+import Header from '../layout/Header'
+import Footer from '../layout/Footer'
+import HomePage from '../pages/HomePage'
+import ComprasPage from '../pages/ComprasPage'
+import AlquileresPage from '../pages/AlquileresPage'
+import { useState } from 'react'
+import Contact from '../elements/Contact'
+import PropertyModal from "./../data/PropertyModal"
 
 const DashboardRoutes = () => {
-    return (
 
+    const [selectedProperty, setSelectedProperty] = useState(null)
+
+    return (
         <>
-            {/* <Header/> */}
+            <Header />
+
+            {selectedProperty && (<PropertyModal properties={[selectedProperty]} onClose={() => setSelectedProperty(null)} />)}
+
             <div>
                 <Routes>
                     <Route path="/inicio"
-                        element={<Home />}
+                        element={<HomePage />}
                     />
-
-                    {/* <Route exact path="/casas"
-                        element={<CasaScreen />}
-                    /> */}
-
-                    {/* <Route exact path="/deptos"
-                        element={<DepartamentoScreen />}
+                    <Route exact path="/compras"
+                        element={<ComprasPage />}
                     />
-
-                    <Route exact path="/galpon"
-                        element={<GalponScreen />}
+                    <Route exact path="/alquileres"
+                        element={<AlquileresPage />}
                     />
-
-                    <Route exact path="/nosotros"
-                        element={<NosotrosScreen />}
-                    />
-
-                    <Route exact path="/contacto"
-                        element={<ContactoScreen />}
-                    /> */}
-
                     <Route
                         path="*"
                         element={<Navigate to="/inicio" replace />}
                     />
-
                 </Routes>
-
+                <Contact />
             </div>
-        {/* <Footer/> */}
+            <Footer />
         </>
     )
 }
