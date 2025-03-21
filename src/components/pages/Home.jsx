@@ -7,12 +7,12 @@ const Home = () => {
             <img src={homeImage} className="w-full h-full object-cover" alt="" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 via black/30 to-black/50 flex items-center justify-center">
                 <div className="text-center text-white max-w-5xl px-4">
-                    <h1 className="text-7xl sm:text-4xl md:text-5xl font-bold mb-4 p-3 bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent tracking-tight">
+                    <h1 className="text-4xl lg:text-7xl sm:text-5xl md:text-6xl font-bold mb-4 p-3 bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent tracking-tight">
                         N & R 
                         <br /> 
                         Negocios Inmobiliarios
                     </h1>
-                    <p className="text-lg md:text-2xl mb-8 text-gray-200">
+                    <p className="text-lg lg:text-2xl md:text-xl mb-8 text-gray-200">
                         La mejor opción para tu negocio inmobiliario
                     </p>
                     <div className="bg-white/30 p-8 rounded-3xl shadow-2xl backdrop-blur-md max-w-2xl mx-auto">
