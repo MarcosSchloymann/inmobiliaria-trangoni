@@ -1,5 +1,5 @@
 import { FaBath, FaBed, FaHeart, FaLocationDot, FaRuler } from "react-icons/fa6"
-import properties from "../properties"
+import properties from "../../properties"
 
 const FeaturedProperties = ({setSelectedProperty}) => {
 
