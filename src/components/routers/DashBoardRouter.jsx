@@ -22,10 +22,10 @@ const DashboardRoutes = () => {
                         element={<HomePage />}
                     />
                     <Route exact path="/compras"
-                        element={<ComprasPage />}
+                        element={<ComprasPage tipo="venta"/>}
                     />
                     <Route exact path="/alquileres"
-                        element={<AlquileresPage />}
+                        element={<AlquileresPage tipo="alquiler"/>}
                     />
                     <Route
                         path="*"

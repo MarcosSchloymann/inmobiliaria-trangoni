@@ -23,6 +23,7 @@ const properties = [
     beds: 4,
     baths: 3,
     sqft: 2800,
+    tipo:"alquiler",
     images: [image3, image4, image5, image6],
   },
   {
@@ -36,6 +37,7 @@ const properties = [
     beds: 5,
     baths: 4,
     sqft: 3500,
+    tipo:"alquiler",
     images: [image5, image1, image9, image7],
   },
   {
@@ -49,6 +51,7 @@ const properties = [
     beds: 3,
     baths: 2,
     sqft: 2000,
+    tipo:"alquiler",
     images: [image3, image6, image5, image1],
   },
   {
@@ -62,6 +65,7 @@ const properties = [
     beds: 4,
     baths: 3.5,
     sqft: 3200,
+    tipo:"venta",
     images: [image2, image4, image5, image12],
   },
   {
@@ -75,6 +79,7 @@ const properties = [
     beds: 6,
     baths: 5,
     sqft: 4500,
+    tipo:"venta",
     images: [image8, image4, image5, image10],
   },
   {
@@ -88,6 +93,7 @@ const properties = [
     beds: 3,
     baths: 2,
     sqft: 2550,
+    tipo:"venta",
     images: [image10, image4, image5, image8],
   },
   {
@@ -101,6 +107,7 @@ const properties = [
     beds: 3,
     baths: 2,
     sqft: 2500,
+    tipo:"venta",
     images: [image5, image7, image12, image1],
   },
   {
@@ -114,6 +121,7 @@ const properties = [
     beds: 3,
     baths: 2,
     sqft: 2400,
+    tipo:"venta",
     images: [image3, image4, image5, image9],
   },
   {
@@ -127,6 +135,7 @@ const properties = [
     beds: 3,
     baths: 2,
     sqft: 2150,
+    tipo:"alquiler",
     images: [image4, image7, image5, image11],
   },
   {
@@ -140,6 +149,7 @@ const properties = [
     beds: 3,
     baths: 2,
     sqft: 2850,
+    tipo:"venta",
     images: [image2, image4, image5, image12],
   },
   {
@@ -153,6 +163,7 @@ const properties = [
     beds: 3,
     baths: 2,
     sqft: 2200,
+    tipo:"alquiler",
     images: [image1, image4, image5, image7],
   },
   {
@@ -166,6 +177,7 @@ const properties = [
     beds: 3,
     baths: 2,
     sqft: 2600,
+    tipo:"venta",
     images: [image5, image4, image5, image8],
   },
 ];
