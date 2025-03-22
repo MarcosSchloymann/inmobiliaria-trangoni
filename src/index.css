@@ -7,9 +7,9 @@
 }
 
 ::-webkit-scrollbar-thumb{
-    background-color: rgb(38, 100, 235);
+    background-color: rgb(235, 199, 38);
 }
 
 ::-webkit-scrollbar-track{
-    background-color: rgb(243, 244, 246);
+    background-color: rgb(241, 246, 208);
 }

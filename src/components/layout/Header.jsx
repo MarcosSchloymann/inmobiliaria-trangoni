@@ -1,10 +1,12 @@
 import { FaHandHoldingDollar, FaHouse, FaHouseUser } from "react-icons/fa6"
 import homeImage from "/homeImage.jpg"
+import logo from "/logo.png"
+
 import { NavLink } from "react-router-dom"
 
 const Header = () => {
     return (
-        <div className="relative h-[100vh]">
+        <div className="relative h-[100vh] mb-7">
             <img src={homeImage} className="w-full h-full object-cover" alt="" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 via black/30 to-black/50 flex items-center justify-center">
                 <div className="text-center text-white max-w-5xl px-4">
@@ -55,6 +57,9 @@ const Header = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className="flex justify-center h-20">
+            <img src={logo} className="w-auto h-auto object-cover"/>
             </div>
         </div>
     )
