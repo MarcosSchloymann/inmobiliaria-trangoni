@@ -18,10 +18,10 @@ const Header = () => {
                     </p>
                     <div className="bg-white/30 p-8 rounded-3xl shadow-2xl backdrop-blur-md max-w-2xl mx-auto">
                         <div className="flex flex-col md:flex-row gap-3">
-                            <input type="text" placeholder="buscar por ubicación" className="flex-1 px-6 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus_ring-blue-500 hover:border-blue-500 hover:bg-blue-50
+                            <input type="text" placeholder="buscar por ubicación" className="flex-1 px-6 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus_ring-orange-500 hover:border-orange-500 hover:bg-orange-50
                         focus:bg-white text-black transition-colors duration-200"/>
 
-                            <button className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover_bg-blue-700">Buscar</button>
+                            <button className="bg-orange-600 text-white px-8 py-3 rounded-lg font-semibold hover_bg-orange-700">Buscar</button>
                         </div>
                         <div className="grid grid-cols-3 gap-3 mt-6">
 
@@ -30,7 +30,7 @@ const Header = () => {
                             >
                                 <div className="flex flex-col items-center bg-slate-50/20 rounded-lg transition-transform hover:scale-105 cursor-pointer">
 
-                                    <FaHouse className="text-blue-600 text-2xl mb-1" />
+                                    <FaHouse className="text-orange-600 text-2xl mb-1" />
                                     <span className="font-semibold text-white">Inicio</span>
                                 </div>
                             </NavLink>
@@ -40,7 +40,7 @@ const Header = () => {
                             >
                                 <div className="flex flex-col items-center bg-slate-50/20 rounded-lg transition-transform hover:scale-105 cursor-pointer">
 
-                                    <FaHouseUser className="text-blue-600 text-2xl mb-1" />
+                                    <FaHouseUser className="text-orange-600 text-2xl mb-1" />
                                     <span className="font-semibold text-white">Alquileres</span>
                                 </div>
                             </NavLink>
@@ -48,7 +48,7 @@ const Header = () => {
                             <NavLink
                             to="/compras">
                             <div className="flex flex-col items-center bg-slate-50/20 rounded-lg transition-transform hover:scale-105 cursor-pointer">
-                                <FaHandHoldingDollar className="text-blue-600 text-2xl mb-1" />
+                                <FaHandHoldingDollar className="text-orange-600 text-2xl mb-1" />
                                 <span className="font-semibold text-white">Ventas</span>
                             </div>
                             </NavLink>
