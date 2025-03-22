@@ -58,7 +58,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex justify-center h-20">
+            <div className="flex justify-center h-10 lg:h-20 md-h20 sm:h-20">
             <img src={logo} className="w-auto h-auto object-cover"/>
             </div>
         </div>
