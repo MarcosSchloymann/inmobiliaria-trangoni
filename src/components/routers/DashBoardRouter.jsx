@@ -8,19 +8,13 @@ import Footer from '../layout/Footer'
 import HomePage from '../pages/HomePage'
 import ComprasPage from '../pages/ComprasPage'
 import AlquileresPage from '../pages/AlquileresPage'
-import { useState } from 'react'
 import Contact from '../elements/Contact'
-import PropertyModal from "./../data/PropertyModal"
 
 const DashboardRoutes = () => {
-
-    const [selectedProperty, setSelectedProperty] = useState(null)
 
     return (
         <>
             <Header />
-
-            {selectedProperty && (<PropertyModal properties={[selectedProperty]} onClose={() => setSelectedProperty(null)} />)}
 
             <div>
                 <Routes>

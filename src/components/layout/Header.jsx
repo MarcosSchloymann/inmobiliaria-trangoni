@@ -49,14 +49,9 @@ const Header = () => {
                             to="/compras">
                             <div className="flex flex-col items-center bg-slate-50/20 rounded-lg transition-transform hover:scale-105 cursor-pointer">
                                 <FaHandHoldingDollar className="text-blue-600 text-2xl mb-1" />
-                                <span className="font-semibold text-white">Compras</span>
+                                <span className="font-semibold text-white">Ventas</span>
                             </div>
                             </NavLink>
-
-                            {/* <div className="flex flex-col items-center bg-slate-50/20 rounded-lg transition-transform hover:scale-105 cursor-pointer">
-                                <FaLocationDot className="text-blue-600 mb-2" />
-                                <span className="font-semibold text-white">San Martín</span>
-                            </div> */}
                         </div>
                     </div>
                 </div>

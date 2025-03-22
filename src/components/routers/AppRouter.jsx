@@ -5,7 +5,6 @@ import {
     Route
 } from "react-router-dom";
 import { useState } from "react";
-import FeaturedProperties from "../data/FeaturedProperties";
 import DashboardRoutes from "./DashBoardRouter";
 
 const AppRouter = () => {
@@ -24,8 +23,6 @@ const AppRouter = () => {
                     <Route path="/*"
                         element={<DashboardRoutes setSelectedProperty={setSelectedProperty}/>}
                     />
-                     {selectedProperty && (<FeaturedProperties properties={[selectedProperty]} onClose={()=> setSelectedProperty(null)}/>)}
-                    
                 </Routes>
             </div>
         </Router>
