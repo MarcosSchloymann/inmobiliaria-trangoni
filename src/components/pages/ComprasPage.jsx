@@ -25,17 +25,17 @@ const ComprasPage = ({ tipo }) => {
 
           <div className="p-6">
             <div className="flex items-center text-gray-500 text-sm mb-3">
-              <FaLocationDot className="text-orange-600"/>
+              <FaLocationDot className="text-red-800"/>
               <span>{property.location}</span>
             </div>
-            <div className="text-2xl font-bold text-orange-600 mb-2">
+            <div className="text-2xl font-bold text-red-800 mb-2">
               {property.price}
             </div>
             <h3 className="text-xl font-semibold mb-4 text-gray-800">{property.title}</h3>
 
-            <div className="flex justify-between intems-center p-3 bg-orange-50 rouded-lg">
+            <div className="flex justify-between intems-center p-3 bg-red-50 rouded-lg">
               <div className="flex items-center gap-2">
-                <FaBed className="text-orange-600"/>
+                <FaBed className="text-red-800"/>
                 <span className="text-gray-600">{property.beds} Habitaciones</span>
               </div>
 
@@ -45,7 +45,7 @@ const ComprasPage = ({ tipo }) => {
               </div>
 
               <div className="flex items-center gap-2">
-                <FaRuler className="text-orange-600"/>
+                <FaRuler className="text-red-800"/>
                 <span className="text-gray-600">{property.sqft} m2</span>
               </div>
             </div>

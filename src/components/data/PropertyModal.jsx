@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { FaBath, FaBed, FaChevronLeft, FaChevronRight, FaLocationDot, FaRuler, FaX } from "react-icons/fa6";
+import { FaBath, FaBed, FaChevronLeft, FaChevronRight, FaLocationDot, FaRuler, FaWhatsapp, FaX } from "react-icons/fa6";
 
 const PropertyModal = ({ onClose, properties }) => {
 
@@ -48,26 +48,26 @@ const PropertyModal = ({ onClose, properties }) => {
           </div>
         </div>
         <div className="flex justify-center items-center gap-2 text-gray-500 text-sm mb-1">
-          <FaLocationDot className="text-orange-600" />
+          <FaLocationDot className="text-red-800" />
           <span>{currentProperty.location}</span>
 
         </div>
         <h2 className="ml-4 text-xl font-bold text-gray-800">{currentProperty.title}</h2>
-        <div className="ml-4 text-lg font-bold text-orange-600 mb-1">{currentProperty.price}</div>
+        <div className="ml-4 text-lg font-bold text-red-800 mb-1">{currentProperty.price}</div>
 
         <div className="flex justify-center gap-6 mb-1 bg-gray-50 rounded-lg">
           <div className="flex items-center gap-3">
-            <FaBed className="text-orange-600" />
+            <FaBed className="text-red-800" />
             <span className="text-gray-600">{currentProperty.beds} Habitaciones</span>
           </div>
 
           <div className="flex items-center gap-2">
-            <FaBath className="text-orange-600" />
+            <FaBath className="text-red-800" />
             <span className="text-gray-600">{currentProperty.baths} Baños</span>
           </div>
 
           <div className="flex items-center gap-2">
-            <FaRuler className="text-orange-600" />
+            <FaRuler className="text-red-800" />
             <span className="text-gray-600">{currentProperty.sqft} m2</span>
           </div>
         </div>
@@ -75,7 +75,12 @@ const PropertyModal = ({ onClose, properties }) => {
           <h3 className="text-center font-semibold mb-1">Descripción</h3>
           <p className="ml-2 text-gray-600">{currentProperty.description}</p>
         </div>
-        <button className="w-full bg-orange-600 text-white py-2 rounded-2xl font-semibold hover:bg-orange-700 transition-colors mb-4">Contacto</button>
+        <button className="w-full bg-red-800 text-white py-2 rounded-2xl font-semibold hover:bg-red-900 transition-colors mb-4" >
+          <a  href="https://wa.me/+5493644607777" target="_blank" className="flex items-center justify-center">
+          <FaWhatsapp/>
+        Contacto
+          </a>
+        </button>
       </div>
     </div>
   )
