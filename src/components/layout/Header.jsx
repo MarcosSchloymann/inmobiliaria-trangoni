@@ -1,6 +1,7 @@
 import { FaHandHoldingDollar, FaHouse, FaHouseUser } from "react-icons/fa6"
 import homeImage from "/homeImage.jpg"
 import logo from "/logo.png"
+import logoInmo from "/logoInmo2.png"
 
 import { NavLink } from "react-router-dom"
 
@@ -9,10 +10,9 @@ const Header = () => {
         <div className="relative h-[100vh] mb-7">
             <img src={homeImage} className="w-full h-full object-cover" alt="" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 via black/30 to-black/50 flex items-center justify-center">
-                <div className="text-center text-white max-w-5xl px-4">
-                    <h1 className="text-4xl lg:text-7xl sm:text-5xl md:text-6xl font-bold mb-4 p-3 bg-gradient-to-r from-yellow-300 to-red-800 bg-clip-text text-transparent tracking-tight">
-                        N & R
-                        <br />
+                <div className="text-center text-white max-w-5xl px-4 flex flex-col items-center">
+                <img src={logoInmo} alt="img" className="w-auto h-24"/>
+                    <h1 className="text-4xl lg:text-7xl sm:text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-yellow-300 to-red-800 bg-clip-text text-transparent tracking-tight">
                         Negocios Inmobiliarios
                     </h1>
                     <p className="text-lg lg:text-2xl md:text-xl mb-8 text-gray-200">
