@@ -1,7 +1,5 @@
 // import React from 'react'
 
-
-
 import { FaBath, FaBed, FaLocationDot, FaRuler } from "react-icons/fa6";
 import getPropertiesByTipo from "../querys/getPropertiesByTipo"
 import { useState } from "react";
