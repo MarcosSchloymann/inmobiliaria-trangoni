@@ -26,7 +26,7 @@ const Header = () => {
                         <NavLink
                             to="/"
                             >
-                                <div className="p-1 flex flex-col items-center bg-slate-50/20 rounded-lg transition-transform hover:scale-105 cursor-pointer">
+                                <div className="p-3 flex flex-col items-center bg-slate-50/20 rounded-lg transition-transform hover:scale-105 cursor-pointer">
 
                                     <FaHouse className="text-red-800 text-xl mb-1" />
                                     <span className="font-semibold text-white">Inicio</span>
@@ -36,7 +36,7 @@ const Header = () => {
                             <NavLink
                             to="/alquileres"
                             >
-                                <div className="p-1 flex flex-col items-center bg-slate-50/20 rounded-lg transition-transform hover:scale-105 cursor-pointer">
+                                <div className="p-3 flex flex-col items-center bg-slate-50/20 rounded-lg transition-transform hover:scale-105 cursor-pointer">
 
                                     <FaHouseUser className="text-red-800 text-xl mb-1" />
                                     <span className="font-semibold text-white">Alquileres</span>
@@ -45,7 +45,7 @@ const Header = () => {
 
                             <NavLink
                             to="/compras">
-                            <div className="p-1 flex flex-col items-center bg-slate-50/20 rounded-lg transition-transform hover:scale-105 cursor-pointer">
+                            <div className="p-3 flex flex-col items-center bg-slate-50/20 rounded-lg transition-transform hover:scale-105 cursor-pointer">
                                 <FaHandHoldingDollar className="text-red-800 text-xl mb-1" />
                                 <span className="font-semibold text-white">Ventas</span>
                             </div>
@@ -53,7 +53,7 @@ const Header = () => {
 
                             <NavLink
                             to="/search">
-                            <div className="p-1 flex flex-col items-center bg-slate-50/20 rounded-lg transition-transform hover:scale-105 cursor-pointer">
+                            <div className="p-3 flex flex-col items-center bg-slate-50/20 rounded-lg transition-transform hover:scale-105 cursor-pointer">
                                 <FaSearch className="text-red-800 text-xl mb-1" />
                                 <span className="font-semibold text-white">Buscar</span>
                             </div>

@@ -14,7 +14,7 @@ const SearchScreen = () => {
 
     const [searchParams] = useSearchParams();
 
-    const bus = searchParams.get('q')
+    const bus= searchParams.get('q')
 
     const [formValues, handleInputChange] = useForm({
         searchText: bus
@@ -28,7 +28,7 @@ const SearchScreen = () => {
     }
 
     
-    const propertiesFilters = properties.filter(property => property.location.toLowerCase().includes(searchText.toLowerCase()))
+    const propertiesFilters = properties.filter(property => property.location.toLowerCase().includes(searchText))
     return (
         <div>
             <section className="flex flex-col max-w-7xl mx-auto py-16 px-4">
