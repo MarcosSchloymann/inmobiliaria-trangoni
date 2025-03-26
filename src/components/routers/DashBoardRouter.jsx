@@ -9,6 +9,7 @@ import HomePage from '../pages/HomePage'
 import ComprasPage from '../pages/ComprasPage'
 import AlquileresPage from '../pages/AlquileresPage'
 import Contact from '../elements/Contact'
+import SearchScreen from '../pages/SearchScreen'
 
 const DashboardRoutes = () => {
 
@@ -26,6 +27,9 @@ const DashboardRoutes = () => {
                     />
                     <Route exact path="/alquileres"
                         element={<AlquileresPage tipo="alquiler"/>}
+                    />
+                    <Route exact path="/search"
+                        element={<SearchScreen/>}
                     />
                     <Route
                         path="*"

@@ -10,7 +10,6 @@ import DashboardRoutes from "./DashBoardRouter";
 const AppRouter = () => {
 
     const [selectedProperty, setSelectedProperty] = useState(null)
-    console.log(selectedProperty)
 
     return (
         <>
@@ -21,7 +20,7 @@ const AppRouter = () => {
 
                 <Routes>
                     <Route path="/*"
-                        element={<DashboardRoutes setSelectedProperty={setSelectedProperty}/>}
+                        element={<DashboardRoutes selectedProperty={selectedProperty} setSelectedProperty={setSelectedProperty}/>}
                     />
                 </Routes>
             </div>
